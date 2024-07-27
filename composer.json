@@ -1,0 +1,22 @@
+{
+    "name": "lakshanjs/simple-apns-notifications",
+    "description": "A simple yet powerful PHP class for sending APNs notifications.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lakshan Jayasinghe",
+            "email": "lakshan.jayasinghe@gmail.com",
+            "homepage": "https://github.com/lakshanjs",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleAPNsNotifications\\": "src/"
+        }
+    }
+}

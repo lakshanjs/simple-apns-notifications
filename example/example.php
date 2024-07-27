@@ -1,27 +1,14 @@
-# Simple APNs Notifications
+<?php
 
-A simple yet powerful PHP class for sending APNs notifications.
-
-## Installation
-
-You can install this package via Composer:
-
-```bash
-composer require lakshanjs/simple-apns-notifications
-```
-
-## Usage
-
-```php
 require 'vendor/autoload.php';
 
 use SimpleAPNsNotifications\APNsNotification;
 
-$keyId = 'YOUR_KEY_ID'; // Your Key ID
-$teamId = 'YOUR_TEAM_ID'; // Your Team ID
-$bundleId = 'com.example.yourapp'; // Your Bundle ID
-$privateKeyPath = 'path/to/AuthKey_YOUR_KEY_ID.p8'; // Path to your .p8 file
-$deviceToken = 'YOUR_DEVICE_TOKEN'; // Device Token
+$keyId = '3J4XD8UNSD'; // Your Key ID
+$teamId = 'F92335CVXH'; // Your Team ID
+$bundleId = 'com.nexowa.srp.voip'; // Your Bundle ID
+$privateKeyPath = 'path/to/AuthKey_3J4XD8UNSD.p8'; // Path to your .p8 file
+$deviceToken = '41e099a0fd482312c6f7731a7492944b923d5572a3b9a3fdca27fcec31b084c0'; // Device Token
 
 $notification = new APNsNotification($keyId, $teamId, $bundleId, $privateKeyPath);
 $notification->setDeviceToken($deviceToken);
@@ -41,8 +28,4 @@ if ($httpcode == 200) {
     echo "Error sending notification: HTTP $httpcode\n";
     echo "Response: $response\n";
 }
-```
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE) for more information.
+?>
